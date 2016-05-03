@@ -1,7 +1,14 @@
-h1 {
-  color: blue;
+body{
+  background-color: #eee;
 }
 
-p {
-  color: red;
+.topBar{
+  background-color: #fff;
+}
+nav,div.usersTools,ul li{
+  display: inline;
+}
+
+div.usersTools{
+  float: right;
 }
