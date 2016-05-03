@@ -1,14 +1,16 @@
 body{
   background-color: #eee;
+  margin: 0;
 }
 
 .topBar{
   background-color: #fff;
+  height: 90px;
 }
 nav,div.usersTools,ul li{
   display: inline;
 }
 
-div.usersTools{
+div.usersTools,form.search{
   float: right;
 }
