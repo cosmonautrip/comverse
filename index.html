@@ -1,34 +1,240 @@
 <!DOCTYPE html>
 <html land="en">
- <head>
-    <meta charset="UTF-8">
-    <title>Comverse</title>
-    <link rel="stylesheet" href="css/css-resetcss">
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-    <header class="topBar">
-      <div class="usersTools">
-        <ul>
-          <li>EN</li> |
-          <li>Costomer login</li>
+<head>
+  <meta charset="UTF-8">
+  <title>Comverse</title>
+  <link rel="stylesheet" href="css/css-reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <header class="topBar_bg"> <!-- top bar background -->
+    <div class="container">
+      <div class="topBar_elements cf">
+          <a href="index.html" class="logo"> <!-- logo area -->
+          <img src="assets/comverse-logo.png" alt="comverse's logo" />
+          </a>
+          <div class="userTools"> <!-- user's tools area -->
+            <form class="langSelector"> <!-- language selector -->
+              <select>
+                <option value="en">EN</option>
+                <option value="he">HE</option>
+              </select>
+            </form>
+
+            <a href="#" class="login simpleBtn dark_text">login</a> <!-- login button-->
+
+          </div>
+
+          <nav class="mainNav"> <!--main navigation -->
+            <ul>
+              <li> <a href="#">your needs</a> </li>
+              <li> <a href="#">our portfolio</a> </li>
+              <li> <a href="#">news & media</a> </li>
+              <li> <a href="#">about comverse</a> </li>
+            </ul>
+          </nav>
+
+          <form class="search"> <!-- search field -->
+            <input type="text" placeholder="search..." class="searchField" />
+            <button type="submit" class="searchBtn"><i class="search_icon"></i> </button>
+          </form>
+      </div>
+    </div>
+  </header> <!-- end for top bar -->
+
+  <main> <!-- main content -->
+    <section class="hero"> <!-- hero section -->
+      <div class="container">
+
+        <ul class="silderContent"> <!-- slider -->
+          <li id="slide_01" class="sliderItem"> <!-- 1st slide -->
+            <h3> Free Your Markets From IT Complexity </h3>
+            <p> Comverse Policy Studio
+                1st Ever Marketing-Oriented Policy Tool </p>
+            <button class="primaryBtn"><!--Learn more button -->
+              <a href="#" class="btnContent"> learn more <i class="arrow_right_icon"></i> </a>
+            </button>
+          </li>
+
+          <li id="slide_02" class="sliderItem"> <!-- 2nd slide -->
+            <h3> Lorem ipsum dolor sit amet</h3>
+            <p> Comverse Policy Studio
+                1st Ever Marketing-Oriented Policy Tool </p>
+            <button class="primaryBtn"><!--Learn more button -->
+              <a href="#" class="btnContent"> learn more <i class="arrow_right_icon"></i> </a>
+            </button>
+          </li>
+
+          <li id="slide_03" class="sliderItem"> <!-- 3rd slide -->
+            <h3> Lorem ipsum dolor sit amet</h3>
+            <p> Comverse Policy Studio
+                1st Ever Marketing-Oriented Policy Tool </p>
+            <button class="primaryBtn"><!--Learn more button -->
+              <a href="#" class="btnContent"> learn more <i class="arrow_right_icon"></i> </a>
+            </button>
+          </li>
+
+          <li id="slide_04" class="sliderItem"> <!-- 4th slide -->
+            <h3> Lorem ipsum dolor sit amet</h3>
+            <p> Comverse Policy Studio
+                1st Ever Marketing-Oriented Policy Tool </p>
+            <button class="primaryBtn"><!--Learn more button -->
+              <a href="#" class="btnContent"> learn more <i class="arrow_right_icon"></i> </a>
+            </button>
+          </li>
         </ul>
-       </div>
-       <a class="logo" href="#">logo</a>
-       <nav>
-        <ul>
-          <li><a href="#">your needs</a></li>
-          <li><a href="#">your needs</a></li>
-          <li><a href="#">your needs</a></li>
-          <li><a href="#">your needs</a></li>
+        <div class="silderControls"> <!--silder's controls -->
+          <a href="#" class="currentSlide">1</a>
+          <a href="#" class="">2</a>
+          <a href="#" class="">3</a>
+          <a href="#" class="">4</a>
+
+        </div>
+
+        <ul class="valueBoxes"><!-- boxes of value-->
+          <li class="valueBox_item pinkBox"> <!-- value box -->
+            <a href="#" class="vlauebox_link"> <!-- 01 -->
+              <h4 class="valuebox_title">Comverse Is Value-Added Service Global Market Leader.</h4>
+              <span class="valuebox_readMore"><i class="link_icon"></i>read more </span>
+            </a>
+          </li>
+
+          <li class="valueBox_item greenBox"> <!-- value box -->
+            <a href="#" class="vlauebox_link"> <!-- 01 -->
+              <h4 class="valuebox_title">Comverse Is Value-Added Service Global Market Leader.</h4>
+              <span class="valuebox_readMore"><i class="article_icon"></i>read more </span>
+            </a>
+          </li>
+
+          <li class="valueBox_item orangeBox"> <!-- value box -->
+            <a href="#" class="vlauebox_link"> <!-- 01 -->
+              <h4 class="valuebox_title">Comverse Is Value-Added Service Global Market Leader.</h4>
+              <span class="valuebox_readMore"><i class="video_icon"></i>read more </span>
+            </a>
+          </li>
         </ul>
-      </nav>
-      <form action="search" method="get" class="search">
-        <input type="text" placeholder="Search"></input>
-      </form>
+      </div>
+    </section> <!-- end of hero section -->
+
+    <section class="solutions_bg">  <!-- solutions section -->
+      <div class="container">
+
+        <h2 class="section_title light_text"> </h2>
+
+        <ul class="solutions_list">
+          <li class="solustion"> <!-- 1st solution -->
+            <i class="data_monetization_icon"></i>
+            Data Monetization
+          </li>
+
+          <li class="solustion"> <!-- 2nd solution -->
+            <i class="m2m_icon"></i>
+            Machine To Machine M2M
+          </li>
+
+          <li class="solustion"> <!-- 3rd solution -->
+            <i class="ott_icon"></i>
+            Over The Top
+          </li>
+
+          <li class="solustion"> <!-- 4th solution -->
+            <i class="cloud_computing_icon"></i>
+            Cloud Computing
+          </li>
+
+          <li class="solustion"> <!-- 5th solution -->
+            <i class="managed_services_icon"></i>
+            Managed Services
+          </li>
+
+          <li class="solustion"> <!-- 6th solution -->
+            <i class="social_media_icon"></i>
+            Social Media
+          </li>
+        </ul>
+
+        <button class="primaryBtn"><!--Learn more button -->
+          <a href="#" class="btnContent"> See all of our solutions <i class="arrow_right_icon"></i> </a>
+        </button>
+
+      </div>
+    </section> <!-- end of solutions section -->
+
+    <section class="events_bg"> <!-- events section -->
+        <div class="container">
+        <h2 class="section_title light_text"> </h2>
+
+        <article class="event"> <!-- single event -->
+          <header><h3 class="subTitle light_text"> news </h3></header>
+          <section class="event_details">
+            <div class="date">
+              <span class="day">04</span>
+              <span class="month">sep</span>
+              <p class="copy dark_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </section>
+          <a href="#" class="link"><i class="news_icon"></i> all news</a>
+        </article> <!-- end of a single event -->
+
+        <article class="event"> <!-- single event -->
+          <header><h3 class="subTitle light_text"> events </h3></header>
+          <section class="event_details">
+            <div class="date">
+              <span class="day">04</span>
+              <span class="month">sep</span>
+              <p class="copy dark_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </section>
+          <a href="#" class="link"><i class="event_icon"></i> all Events</a>
+        </article> <!-- end of a single event -->
+
+        <article class="event"> <!-- single event -->
+          <header><h3 class="subTitle light_text"> press Releases </h3></header>
+          <section class="event_details">
+            <div class="date">
+              <span class="day">04</span>
+              <span class="month">sep</span>
+              <p class="copy dark_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </section>
+          <a href="#" class="link"><i class="press_icon"></i> all Press Releases</a>
+        </article> <!-- end of a single event -->
+      </div>
+    </section> <!-- end of events section -- >
+
+    <section class="success_stories_bg"> <!-- success stories section -->
+      <h2 class="section_title dark_text">success_stories</h2>
+      <div class="testimonials_layout">
+      <ul>
+        <li>
+          <a>
+            <div class="front">
+              <div class="clinet_testimonial">
+                <img src="img/avatar01.png" alt="Sergey Korotych's Photo" />
+                  <p>
+                    It makes sense to put them in RSS feed, but they are not self-contained nor complete...
+                  </p>
+                </div>
+
+                <div class="client_details">
+                  <span class="name">Sergey Korotych</span>
+                  <span class="position">Deputy CEO, 3 Mob Ukraine</span>
+              </div>
+            </div>
+
+          </a>
+
+        </li>
+      </ul>
+    </div>
+    </section> <!-- end of success stories section -->
+  </main>
 
 
-      </header>
 
-  </body>
+</body>
 </html>

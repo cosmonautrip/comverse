@@ -1,16 +1,161 @@
-body{
-  background-color: #eee;
-  margin: 0;
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+html {
+    font-size: 62.5%;
 }
 
-.topBar{
-  background-color: #fff;
-  height: 90px;
-}
-nav,div.usersTools,ul li{
-  display: inline;
+
+body {
+    font-family: helvetica, sans-serif;
+    background-color: #eee;
+    position: relative
 }
 
-div.usersTools,form.search{
-  float: right;
+main {
+    padding-top: 40px;
+    position: relative;
+
+}
+
+/** clear fix **/
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+/** General **/
+.container {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 15px 0 15px;
+}
+a {
+    text-decoration: none;
+}
+.simpleBtn{
+    text-transform: uppercase;
+    color: #585951;
+}
+
+.dark_text {
+    color: #333;
+}
+
+.userTools{
+    margin-top: 20px;
+}
+
+/** Top Bar **/
+
+.topBar_bg{
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 3;
+    height: 90px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.topBar_elements {
+    margin-top: 10px;
+}
+
+a.logo {
+    margin-top: 2px;
+}
+
+.userTools,.search {
+    float: right;
+}
+
+.logo,.langSelector {
+    float: left;
+}
+
+.mainNav ul {
+    float: left;
+    margin: 50px 0 0 20px;
+    display: block;
+}
+
+.mainNav li {
+    float: left;
+    margin: 0 10px;
+    position: relative;
+}
+
+.mainNav a{
+    color: #585951;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+
+.userTools {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+form.langSelector select {
+    border: none;
+    outline-style: none;
+}
+
+.login {
+    position: relative;
+    color: #4EA6D2;
+    display: block;
+    margin-left: 20px;
+    float: right;
+    font-size: 12px;
+    padding-top: 3px;
+}
+
+.search {
+    position: relative;
+    width: 18%;
+    height: 2.5rem;
+    margin-top: 8px;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+input.searchField {
+    border: none;
+    width: 85%;
+    height: 100%;
+    font-size: 12px;
+    line-height: 12px;
+    outline-style: none;
+    padding-left: 2%;
+    padding-top: 0px;
+}
+
+button.searchBtn {
+    border: none;
+    background: transparent;
+    outline-style: none;
+    cursor: pointer;
+}
+
+i.search_icon {
+    background: url(../assets/searchBtn.png) no-repeat center;
+    display: block;
+    width: 16px;
+    height: 16px;
+    top: 8px;
+    right: 8px;
+    position: absolute;
 }
