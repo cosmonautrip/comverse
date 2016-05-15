@@ -12,10 +12,17 @@ body {
 }
 
 main {
-    padding-top: 40px;
+    padding-top: 60px;
     position: relative;
 
 }
+
+section {
+    position: relative;
+    width: 100%;
+    padding: 30px 0;
+}
+
 
 /** clear fix **/
 
@@ -52,6 +59,17 @@ a {
 .dark_text {
     color: #333;
 }
+
+.center{
+  text-align: center;
+}
+
+h2 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
 
 
 
@@ -159,19 +177,154 @@ i.search_icon {
     position: absolute;
 }
 
+/* silder */
+
+
+.silderContent {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#slide_02,#slide_03,#slide_04 {
+    display: none;
+}
+
+.highlights_list{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.highlight{
+    background: url(../assets/slide-bg-complexity.jpg) no-repeat top center fixed ;
+    height: 100%;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.heightlight_title{
+    font-size: 3rem;
+    line-height: 3.5rem;
+}
+
+.heightlight_subtitle {
+    margin-top: 15px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.highlights .more_link {
+    text-transform: uppercase;
+    width: 180px;
+}
+
+.highlights_nav{
+    top: 250px;
+    z-index: 1
+}
+
+.highlight_link{
+    background: #e5e5e5;
+    color: #e5e5e5;
+    float: left;
+    margin-right: 10px;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.5);
+}
+
+.highlight_link:hover{
+    background: #3097cb;
+    color: #3097cb;
+}
+
+.media_list{
+    margin-top: 320px;
+}
+
+.media_item{
+    float: left;
+    width: 30%;
+    border-radius: 7px;
+    opacity: 0.85;
+    box-shadow: 1px 1px 4px #a2a2a2;
+    transition: opacity 0.5s;
+
+}
+
+.media_item + .media_item{
+    margin-left: 5%;
+}
+
+.media_item:hover{
+    opacity: 1;
+}
+
+.media_link{
+    display: block;
+    padding: 20px 15px;
+    position: relative;
+    height: 175px;
+    position: relative;
+}
+
+.media_title{
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+
+.media_more_button{
+    position: absolute;
+    bottom: 5%;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.media_more_button img{
+    margin-right: 10px;
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.pink_tab{
+    background: #ff3399;
+}
+
+.orange_tab{
+    background: #ff6600;
+}
+
+.green_tab{
+    background: #5abe28;
+}
+
+
+
+/* solution section */
+
+.solutions_bg {
+    padding: 50px;
+    background: #BBDCD7;
+}
+
+/* events section */
+.events_bg {
+    padding: 50px;
+    background: #C7BBDC;
+}
+
+/* testimonial section */
 
 
 
 
 
 
-
-
-
-
-
-
-/**** footer ****/
+/* footer */
 
 footer{
     background: url(../img/footerBg.png);
