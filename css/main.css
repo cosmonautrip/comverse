@@ -19,7 +19,6 @@ main {
 
 section {
     position: relative;
-    width: 100%;
     padding: 30px 0;
 }
 
@@ -70,7 +69,9 @@ h2 {
     margin-bottom: 30px;
 }
 
-
+h3{
+  font-size: 16px;
+}
 
 
 /** =Top Bar **/
@@ -124,9 +125,22 @@ a.logo {
     margin-bottom: 26px;
 }
 
-form.langSelector select {
+.selector_warpper{
+    float: left;
+    overflow: hidden;
+    width: 36px;
+
+}
+
+.selector_warpper select {
+    width: 32px;
     border: none;
     outline-style: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent url("https://lh4.ggpht.com/TamGcMq9hUL_FCKk_bT1kKGCLqmsEf73XzK4m9dDL4p1qaK4fLoDyJibhXfVpcJy3XfslgkF=w16") no-repeat right center;
+    font-size: 12px;
 }
 
 .login {
@@ -314,7 +328,20 @@ i.search_icon {
 /* events section */
 .events_bg {
     padding: 50px;
-    background: #C7BBDC;
+    background: url(../assets/news-and-events-bg.jpg) 50% 50% no-repeat;
+}
+
+article.event {
+    width: 33%;
+    position: relative;
+    display: inline-block;
+}
+
+.event_details {
+    background: rgba(255, 255, 255, 0.51);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
 }
 
 /* testimonial section */
