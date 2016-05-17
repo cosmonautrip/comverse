@@ -58,6 +58,9 @@ a {
 .dark_text {
     color: #333;
 }
+.light_text{
+    color: #fff;
+}
 
 .center{
   text-align: center;
