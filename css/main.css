@@ -76,6 +76,21 @@ h3{
   font-size: 16px;
 }
 
+.hidden {
+  display: none;
+}
+
+.wide {
+    width: 37.5%;
+}
+
+.narrow {
+    width: 25%;
+}
+
+.button_wrapper {
+    text-align: center;
+}
 
 /** =Top Bar **/
 
@@ -324,14 +339,15 @@ i.search_icon {
 /* solution section */
 
 .solutions_bg {
-    padding: 50px;
     background: #BBDCD7;
 }
 
 /* events section */
+
 .events_bg {
     padding: 50px;
     background: url(../assets/news-and-events-bg.jpg) 50% 50% no-repeat;
+    background-attachment: fixed;
 }
 
 article.event {
@@ -344,11 +360,50 @@ article.event {
     background: rgba(255, 255, 255, 0.51);
     border-radius: 8px;
     padding: 20px;
-    margin: 15px 0;
+    margin: 20px 0;
+}
+
+.date {
+    float: left;
+    background: blue;
+    padding: 10px;
+    margin-right: 20px;
+}
+.event_description {
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.day {
+    border-bottom: 1px solid #FFF;
+    padding-bottom: 6px;
+    margin-bottom: 2px;
+    color: white;
+}
+.month {
+    display: block;
+    font-size: 2.7rem;
+    padding: 1px 0px;
+    color: white;
 }
 
 /* testimonial section */
 
+ul.testimonials_group {
+    float: left;
+}
+
+li.testimonial.large {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background: white;
+}
+
+li.testimonial.small {
+    float: left;
+    margin-left: 10px;
+}
 
 
 
