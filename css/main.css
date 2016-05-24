@@ -445,9 +445,11 @@ footer{
     text-decoration: underline;
 }
 
+
+
 .subscribe_blog{
     float: right;
-    width: 30%;
+    width: 25%;
     padding: 0 20px;
     background: rgba(225, 225, 225, 0.15)
 }
